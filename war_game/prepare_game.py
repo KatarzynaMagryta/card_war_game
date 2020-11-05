@@ -8,18 +8,9 @@ def create_deck():
     figures = [*[str(i) for i in range(2, 11)], 'J', 'Q', 'K', 'A']
     colours = ['D', 'H', 'C', 'S']
 
-    # cards_list = (
-    #     f"{figure}{colour}"
-    #     for figure, colour in product(figures, colours)
-    #     # for figure in figures
-    #     # for colour in colours
-    # )
-
     return [
         Card(figure, colour)
         for figure, colour in product(figures, colours)
-        # Card.create_card_from_string(card)
-        # for card in cards_list
     ]
 
 
@@ -59,5 +50,3 @@ def set_table_from_given_two_cards_sets(set_1, set_2):
 
 # example_table = deal_cards(n_players=2, n_cards_in_hand=5)
 # print(example_table)
-
-

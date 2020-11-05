@@ -25,5 +25,3 @@ class Card:
             return cls(name[0], name[-1])
         elif len(name) == 3:
             return cls(name[0:2], name[-1])
-
-

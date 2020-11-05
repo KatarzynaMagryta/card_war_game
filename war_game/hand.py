@@ -51,7 +51,7 @@ class Hand:
             Card.create_card_from_string(card)
             for card in input_list
         )
-        # przyjmuje wyr generujące obiektów typu card, a potem ją ubiera w klasę deck
+
 
 
 
